@@ -1,11 +1,11 @@
-params.input_path="public2/users/fuyuhua/04Projects/qmzheng/05test/data/*"
-params.script_dir="//public2/users/fuyuhua/04Projects/qmzheng/04script/RNAdb/scripts"
+params.input_path="/public2/users/fuyuhua/04Projects/qmzheng/05test/data/*"
+params.script_dir="/public2/users/fuyuhua/04Projects/qmzheng/04script/RNAdb/scripts"
 params.output_path="/public2/users/fuyuhua/04Projects/qmzheng/05test/output"
 
 params.index ="/public2/users/fuyuhua/04Projects/qmzheng/00ref/Genome/Sus_Genome"
 params.fai ="/public2/users/fuyuhua/04Projects/qmzheng/00ref/Genome/Sus_scrofa.Sscrofa11.1.dna_sm.toplevel.fa.fai"
 params.ref ="/public2/users/fuyuhua/04Projects/qmzheng/00ref/Genome/Sus_scrofa.Sscrofa11.1.dna_sm.toplevel.fa"
-params.gtf ="//public2/users/fuyuhua/04Projects/qmzheng/00ref/Annotation/Sus.gtf"
+params.gtf ="/public2/users/fuyuhua/04Projects/qmzheng/00ref/Annotation/Sus.gtf"
 params.bed="/public2/users/fuyuhua/04Projects/qmzheng/00ref/Annotation/Sus.bed"
 
 QC="$params.script_dir/QC.py"
