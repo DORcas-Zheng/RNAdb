@@ -1,6 +1,6 @@
-
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
-n >= 3.6
+# python >= 3.6
 
 #####Import Module#####
 import glob
@@ -73,52 +73,3 @@ if __name__ == '__main__':
         sys.stderr.write("User interrupt me! ;-) See you!\n")
         sys.exit(0)
 
-# python >= 2.7
-
-#####Import Module#####
-import logging
-import sys
-import os
-import math
-import time
-import argparse
-import glob
-import re
-from functools import wraps
-import numpy as np
-import pandas as pd
-
-#####Description####
-usage = '''
-@Date    : 2022-11-24 16:07:16
-@Author  : Your Name (you@example.org)
-@Link    : http://example.org
-@Version : $Id$
-Description:
-
-Example:
-    python {} [-i input] [-o output]
-Step:
-
-'''.format(__file__[__file__.rfind(os.sep) + 1:])
-
-
-class HelpFormatter(argparse.RawDescriptionHelpFormatter, argparse.ArgumentDefaultsHelpFormatter):
-    pass
-
-
-def timeit(function):
-    '''
-    用装饰器实现函数计时
-    :param function: 需要计时的函数
-    :return: None
-    '''
-
-    @wraps(function)
-    def function_timer(*args, **kwargs):
-        print('[Function: {name} start...]'.format(name=function.__name__))
-        t0 = time.time()
-        result = function(*args, **kwargs)
-        t1 = time.time()
-        print('[Function: {name} finished, spent time: {time:.2f}s]'.format(name=function.__name__, time=t1 - t0))
-        return result
